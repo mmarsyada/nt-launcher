@@ -1,0 +1,52 @@
+{
+  "name": "NewTempest_launcher",
+  "version": "0.9.7",
+  "description": "New Tempest Official SWGEMU Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "build --win --ia32 -p always"
+  },
+  "repository": "https://github.com/mmarsyada/nt-launcher",
+  "homepage": "http://swgemu.newtempest.com",
+  "keywords": [
+    "new tempest",
+    "launcher",
+    "installer",
+    "swg",
+    "star",
+    "wars",
+    "galaxies",
+    "emulator",
+    "emu",
+    "swgemu"
+  ],
+  "author": "Sambuka at New Tempest",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-builder": "^19.13.0",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "electron-is-dev": "^0.2.0",
+    "electron-log": "^2.2.7",
+    "electron-updater": "^2.4.5",
+    "follow-redirects": "^1.2.4",
+    "random-access-file": "^1.8.1",
+    "request": "^2.81.0"
+  },
+  "build": {
+    "productName": "NT Launcher",
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "nsis": {
+      "perMachine": true
+    }
+  }
+}
